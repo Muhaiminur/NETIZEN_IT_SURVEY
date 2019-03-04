@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SURVEY_PAGE"
+    tools:showIn="@layout/activity_survey__page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/survey_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/text_hint"
+                        android:elevation="8dp"
+                        android:hint="@string/survey_name_string"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_hint" />
+
+                    <RadioGroup
+                        android:id="@+id/gender_radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/survey_male"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="@string/survey_male_string" />
+
+                        <RadioButton
+                            android:id="@+id/survey_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="@string/survey_female_string" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/survey_father_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/text_hint"
+                        android:elevation="8dp"
+                        android:hint="@string/survey_father_name_string"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_hint" />
+
+                    <EditText
+                        android:id="@+id/survey_mother_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/text_hint"
+                        android:elevation="8dp"
+                        android:hint="@string/survey_mother_name_string"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_hint" />
+
+                    <EditText
+                        android:id="@+id/survay_birth_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                        android:editable="false"
+                        android:hint="@string/survey_birth_string"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/app_dark" />
+
+                    <EditText
+                        android:id="@+id/survey_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/text_hint"
+                        android:elevation="8dp"
+                        android:hint="@string/survey_school_string"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_hint" />
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/survey_division"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rectangular_border"
+                        android:padding="5dp"
+                        app:ms_arrowColor="@color/colorAccent"
+                        app:ms_baseColor="@android:color/transparent"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelColor="@color/colorAccent"
+                        app:ms_floatingLabelText="@string/survey_division_string"
+                        app:ms_hint="@string/survey_division_string"
+                        app:ms_hintColor="@color/colorAccent"
+                        app:ms_multiline="false" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/blue_gradient"
+                android:text="@string/survey_submit_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

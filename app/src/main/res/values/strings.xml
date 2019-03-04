@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">NETIZEN_SURVEY</string>
+
+    <!--Common-->
+
+
+    <!--Login Page-->
+    <string name="login_email_string">Email</string>
+    <string name="login_password_string">Password</string>
+    <string name="login_remember_string">Remember Me</string>
+    <string name="login_forgot_string">Forgot Password?</string>
+    <string name="login_log_string">LOG IN</string>
+    <string name="login_registration_string">Do not have an account? Create Account First</string>
+    <string name="login_reg_string">Create An Account</string>
+
+    <!--REgistration-->
+    <!-- Registration Page string -->
+    <string name="registration_username_hint">Enter Full Name</string>
+    <string name="registration_email_hint">Enter Email Address</string>
+    <string name="registration_password_hint">Enter Password</string>
+    <string name="registration_confirm_password_hint">Enter Confirm Password</string>
+    <string name="registration_button_string">Create An Account</string>
+    <string name="registration_login_button_string">You Have An Account?Login Here</string>
+    <string name="title_activity_survey__page">SURVEY_PAGE</string>
+
+    <!--Survey Page-->
+    <string name="survey_name_string">Enter Full Name</string>
+    <string name="survey_father_name_string">Enter Father Name</string>
+    <string name="survey_mother_name_string">Enter Mother Name</string>
+    <string name="survey_school_string">Enter School Name</string>
+    <string name="survey_female_string">Female</string>
+    <string name="survey_male_string">Male</string>
+    <string name="survey_division_string">Enter Group</string>
+    <string name="survey_birth_string">Date Of Birth</string>
+    <string name="survey_submit_string">Submit</string>
+    <string name="survey_gender_string">Check Gender</string>
+    <string-array name="division_array">
+        <item>Science</item>
+        <item>Commerce</item>
+        <item>Arts</item>
+    </string-array>
+
+    <!--Student Name-->
+    <string name="search_string">Search Student Name</string>
+
+</resources>
